@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FordActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/hamburguesas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HAMBURGUESAS"
+            android:icon="@drawable/hamburguesas"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/bebidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BEBIDAS"
+            android:icon="@drawable/bebidas"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/golosinas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GOLOSINAS"
+            android:icon="@drawable/golosinas"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+    
+</LinearLayout>
